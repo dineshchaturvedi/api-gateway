@@ -29,7 +29,7 @@ public class ApiGatewayConfirguration {
                     .uri("lb://CURRENCY-CONVERSION"))
                 .route(p2 -> p2.path("/CURRENCY-CONVERSION-FEIGN/**")
                     .filters(f -> f.rewritePath("/CURRENCY-CONVERSION-FEIGN/(?<remaining>.*)", "/${remaining}"))
-                    .uri("lb://CURRENCY-CONVERSION-FEIGN"))
+                    .uri("lb://CURRENCY-CONVERSION"))
 
                 .build();
     }
