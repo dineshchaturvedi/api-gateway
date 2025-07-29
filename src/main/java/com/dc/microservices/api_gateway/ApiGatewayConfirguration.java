@@ -1,8 +1,5 @@
 package com.dc.microservices.api_gateway;
 
-import java.util.function.Function;
-
-
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
